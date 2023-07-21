@@ -7,3 +7,18 @@ import matplotlib.pyplot as plt
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 # Image detection in a specific image
 imgs = ['https://ultralytics.com/images/zidane.jpg']
+
+
+file_name = wget.download(imgs[0])
+img = Image.open(file_name)
+print(f'\n{file_name} = {img.size}')
+display(img)
+
+results = model(imgs)
+print(results)
+
+# Results
+results.print()
+results.save()
+results.xyxy[0]
+results.pandas().xyxy[0]
