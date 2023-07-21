@@ -1,0 +1,9 @@
+import torch
+from PIL import Image, ImageDraw
+import wget
+import matplotlib.pyplot as plt
+
+#Download the model
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+# Image detection in a specific image
+imgs = ['https://ultralytics.com/images/zidane.jpg']
