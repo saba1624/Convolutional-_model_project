@@ -43,3 +43,35 @@ model = Net()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
+
+
+# Number of Epochs
+num_epochs = 5
+
+# Training cycle.
+for epoch in range(num_epochs):
+    running_loss = 0.0
+    for i, (inputs, labels) in enumerate(trainloader):
+        # Put data on (CPU o GPU)
+        inputs = inputs.to(device)
+        labels = labels.to(device)
+
+        
+        optimizer.zero_grad()
+
+        # Forward pass
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
+
+        # Backward pass y optimización
+        loss.backward()
+        optimizer.step()
+
+        # AVG Loss on epoch
+        running_loss += loss.item()
+        if i % 200 == 199:
+            print(f'Epoch {epoch + 1}, Batch {i + 1}, Loss: {running_loss / 200:.3f}')
+            running_loss = 0.0
+
+print('training is over.')
+
