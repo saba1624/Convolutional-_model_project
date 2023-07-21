@@ -1,0 +1,24 @@
+import os
+import gc
+from PIL import Image
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms
+
+from tqdm.notebook import tqdm
+
+#GPU usage (8GB), if not available, we use the CPU.
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
+device = torch.device(device)
+print(device)
+torch.cuda.empty_cache()
+gc.collect()
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:8192"
