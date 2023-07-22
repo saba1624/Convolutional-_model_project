@@ -4,4 +4,4 @@
    
    trainset = datasets.CIFAR10(root='./new_data_folder', train=True, download=True, transform=transform)
    testset = datasets.CIFAR10(root='./new_data_folder', train=False, download=True, transform=transform)
-
+3. I am continuously uploading the material; the project's deadline is August 5th, 2023.
