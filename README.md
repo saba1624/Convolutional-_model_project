@@ -1,7 +1,2 @@
 # Convolutional-_model_project
-1. Convolutional model for object recognition in images, designed for drones or robots, utilizing a classical convolutional model and YOLO 6
-2. Change the storage path for image files on lines 13 and 14. Modify the trainset and testset variables as follows:
-   
-   trainset = datasets.CIFAR10(root='./new_data_folder', train=True, download=True, transform=transform)
-   testset = datasets.CIFAR10(root='./new_data_folder', train=False, download=True, transform=transform)
-3. I am continuously uploading the material; the project's deadline is August 5th, 2023.
+1.This first project involves the implementation of the "deep sort" algorithm along with the latest YOLOv8 model provided by Ultralytics. This approach is applied to image recognition and classification in videos. My initial goal is to enhance both the detection and classification models to transition towards a real-time object detection and classification model while a drone's camera captures these images, which will be crucial for subsequent decision-making.
