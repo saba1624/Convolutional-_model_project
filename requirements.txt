@@ -1,0 +1,50 @@
+
+
+
+!yolo task=detect mode=predict model=yolov8n.pt conf=0.25 source='/content/prueba.jpg' save=True
+/bin/bash: line 1: YOLO: command not found
+
+
+Quiero disculparme por no estar contigo en la fundación, como lo platicamos. Subestimé la complejidad de lo que estoy haciendo. Estoy trabajando en un código para detectar y clasificar objetos en vídeos para un dron, pero ha resultado ser más desafiante de lo que esperaba. La falta de documentación para algunos modelos me ha obligado a realizar muchas consultas y esto ha ralentizado el proceso.
+
+Te enviaré algunos vídeos para mostrarte los avances, aunque la clasificación aún no es precisa porque necesito pre-entrenar las redes neuronales para mejorar las etiquetas del modelo. El problema es que esto está afectando significativamente el rendimiento y la eficiencia, y he estado lidiando con ello durante varios días mientras investigo documentación adicional.
+
+Además, quería mencionarte que he tenido que ocuparme de otras responsabilidades, como tramitar tres peticiones y una tutela, así como presentar una apelación para intentar salvar la finca. También tuve que instalar una tubería de 4 pulgadas en casa y hacer reparaciones en el andén. Han ocurrido muchas cosas y he tenido que ocuparme.
+
+
+
+
+certifi             == 2023.7.22
+charset-normalizer  == 3.2.0
+colorama            == 0.4.6
+contourpy           == 1.1.1
+cycler              == 0.11.0
+deep-sort-realtime  == 1.3.2
+filelock            == 3.12.4
+filterpy            == 1.4.5
+fonttools           == 4.42.1
+idna                == 3.4
+importlib-resources == 6.1.0
+Jinja2              == 3.1.2
+kiwisolver          == 1.4.5
+lap                 == 0.4.0
+MarkupSafe          == 2.1.3
+mpmath              == 1.3.0
+networkx            == 3.1
+numpy               == 1.24.4
+opencv-python       == 4.8.0.76
+packaging           == 23.1
+Pillow              == 10.0.1
+pip                 == 23.2.1
+psutil              == 5.9.5
+py-cpuinfo          == 9.0.0
+pyparsing           == 3.1.1
+pytz                == 2023.3.post1
+PyYAML              == 6.0.1
+scipy               == 1.10.1
+setuptools          == 68.2.2
+torch               == 2.0.1
+torchvision         == 0.15.2
+tqdm                == 4.66.1
+ultralytics         == 8.0.184
+wheel               0.41.2
